@@ -17,7 +17,7 @@ class Thing {
         this.ry = ry;
         this.rz = rz;
 
-        this.name = "Bouby!";
+        this.name = "Bouby";
         this.dialogue = null;
 
         this.update = this.update.bind(this);
@@ -44,7 +44,7 @@ class Thing {
                 isPointing : true,
                 action : 'create_dialog',
                 target : null,
-                value : `Hi, my name is ${this.name}`
+                value : `Hi, my name is ${this.name}!|What's up?|That's nice!`
             };
         } else {
             return {
@@ -68,7 +68,7 @@ export default class World extends Component {
             innerWidth : 400,
             innerHeight : 400,
             isPointing : false,
-            dialog : "Some text",
+            dialog : "",
             isTalking : false,
         };
 

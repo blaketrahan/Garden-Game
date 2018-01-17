@@ -55,3 +55,22 @@
 p {
     font-size: 2em;
 }
+.nextButton {
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    cursor: pointer;
+    &:after {
+        content: " ";
+        width: 50%;
+        height: 50%;
+        border-right: 0.5em solid #00bcd4;
+        border-top: 0.5em solid #00bcd4;
+        transform: rotateZ(45deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
